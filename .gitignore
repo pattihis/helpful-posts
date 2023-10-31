@@ -1,0 +1,124 @@
+#####################################################################################
+##                                                                                  #
+##                       GIT IGNORE FOR WORDPRESS SITES                             #
+##    ------------------------------                                                #
+##    Adapted https://github.com/github/gitignore/blob/master/WordPress.gitignore   #
+##                                                                                  #
+#####################################################################################
+
+## OS and Utility Stuff ##
+
+#==================#
+#     OS Files     #
+#==================#
+*.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+
+#===================#
+#     IDE Files     #
+#===================#
+.idea
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.codekit3
+
+
+#===================================#
+#    Log, map files, secret .env    #
+#===================================#
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
+.sass-cache
+*.css.map
+*.js.map
+*.LICENSE
+*.lck
+/logs/xdebug
+
+
+#===================================#
+#    Compiled files                 #
+#===================================#
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+
+#===================================#
+#    Packaged files                 #
+#===================================#
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+#=============================#
+#    Config, secrets, .env    #
+#=============================#
+.env
+
+
+## Vendor, Libs and Content ##
+
+#===================================#
+#       Vendor and npm Files        #
+#===================================#
+#vendor
+node_modules
+package-lock.json
+composer.lock
+
+
+#===================================#
+#       WordPress Core Files        #
+#===================================#
+/wp-app/*
+/wp-app/wp-content/*
+/wp-app/wp-content/plugins/akismet
+/wp-app/wp-content/plugins/hello.php
+/wp-app/wp-content/plugins/index.php
+wp-config.php
+readme.html
+license.txt
+
+
+#===================================#
+#          Database Files           #
+#===================================#
+/db-data
+
+#===================================#
+#          Backup Files           #
+#===================================#
+/backups
+
+
+#===================================#
+#          Whitelist                #
+#===================================#
+!/wp-app/wp-content
+!/wp-app/wp-content/plugins
+
+# plugins
+#/wp-app/wp-content/plugins/*
+#!/wp-app/wp-content/plugins/hello.php
