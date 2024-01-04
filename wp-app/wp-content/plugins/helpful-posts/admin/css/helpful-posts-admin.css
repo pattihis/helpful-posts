@@ -1,0 +1,88 @@
+/**
+ * All of the CSS for our admin-specific functionality should be
+ * included in this file.
+ */
+
+.helpful-posts-metabox-wrap,
+.helpful-posts-metabox-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.helpful-posts-metabox,
+.helpful-posts-metabox-wrap button {
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border: 2px solid #eee;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.helpful-posts-metabox-left {
+  padding: 0.5rem 1rem;
+  border: 2px dashed #caf;
+  border-radius: 0.5rem;
+}
+
+.helpful-posts-metabox-right {
+  display: flex;
+  align-items: center;
+}
+
+.helpful-posts-metabox span {
+  margin-right: 0.5rem;
+  color: #333;
+}
+
+.helpful-posts-metabox span:last-of-type {
+  margin-right: 0;
+  color: #888;
+  text-transform: capitalize;
+}
+
+div.helpful-posts-metabox:before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.125rem;
+  background-size: contain;
+}
+
+.helpful-posts-metabox.yes:before {
+  background: url('data:image/svg+xml,<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><circle cx="36" cy="36" r="23" fill="%23AAA" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="%23AAA" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M45.815 44.93c-2.9 1.635-6.248 2.57-9.815 2.57s-6.915-.934-9.815-2.57"/><path fill="%23fff" d="M30 31a3.001 3.001 0 0 1-6 0c0-1.655 1.345-3 3-3s3 1.345 3 3M48 31a3.001 3.001 0 0 1-6 0c0-1.655 1.345-3 3-3s3 1.345 3 3"/></svg>') no-repeat center center;
+}
+
+.helpful-posts-metabox.no:before {
+  background: url('data:image/svg+xml,<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><g fill="%23AAA" stroke="%23fff" stroke-miterlimit="10" stroke-width="2"><circle cx="36" cy="36" r="23"/><path stroke-linecap="round" stroke-linejoin="round" d="M27 43h18M25 31h5M43 31h5"/></g></svg>') no-repeat center center;
+}
+
+.helpful-posts-metabox-wrap button {
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.helpful-posts-metabox-wrap button:hover {
+  border: 2px solid red;
+  color: red;
+}
+
+.helpful-loader {
+  width: 10rem;
+  height: 1rem;
+  margin: 1rem 0;
+  background: linear-gradient(#999 0 0) 0/0% no-repeat #ddd;
+  animation: helpLoader 2s infinite linear;
+}
+
+@keyframes helpLoader {
+  100% {
+    background-size: 100%
+  }
+}
